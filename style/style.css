@@ -67,6 +67,19 @@
     display: flex;
     justify-content: center;
   }
+
+  /* Checkbox */
+  .check {
+    cursor: pointer;
+    width: 30px;
+    height: 20px;
+    accent-color: #4a90e2;
+  }
+
+  .check:checked + .task-text {
+    text-decoration: line-through;
+    color: gray; /* O el color que prefieras */
+  }
   
   /* Lista de tareas */
   #ul_list {
@@ -82,9 +95,34 @@
   
   /* Tareas */
   li {
+    display: flex;
+    align-items: center;
     font-weight: bold;
     color: var(--texto);
-    margin-bottom: 10px;
+  }
+
+  li:hover {
+    color: var(--hover);
+  }
+
+  /* Boton para eliminar tareas */
+  .trash {
+    width: 3vh;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    margin-left: 2em;
+  }
+
+  li:hover .trash {
+    opacity: 1;
+    visibility: visible;
+    cursor: pointer;
+  }
+
+  .fade-out {
+    opacity: 0;
+    transition: opacity 0.3s ease;
   }
   
   /* Tarea completada */
@@ -124,4 +162,5 @@
       height: 600px;
     }
   }
+  
   
