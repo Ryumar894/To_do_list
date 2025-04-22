@@ -1,0 +1,127 @@
+/* Variables */
+:root {
+    --background: #f2f2f2;
+    --background_header: #4a90e2;
+    --texto: #333333;
+    --bordes: #d9d9d9;
+    --boton: #4a90e2;
+    --hover: #357ABD;
+    --tareas_completadas: #999999;
+  }
+  
+  /* Estilos base - Mobile first */
+  * {
+    font-family: Verdana;
+    margin: 0;
+    border: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: var(--background);
+    padding: 1rem;
+  }
+  
+  header {
+    color: var(--texto);
+    text-align: center;
+    font-size: 5vw;
+    padding: 10px 0;
+    background-color: var(--background_header);
+    border-radius: 8px;
+  }
+  
+  /* Input */
+  #add_task {
+    margin-top: 5vh;
+    width: 80%;
+    max-width: 300px;
+    height: 30px;
+    border-radius: 3px;
+    outline: none;
+    padding: 5px;
+    border: 1px solid var(--bordes);
+  }
+  
+  /* Botón */
+  #btnAdd {
+    background-color: var(--boton);
+    border-radius: 3px;
+    width: 80px;
+    height: 35px;
+    cursor: pointer;
+    color: white;
+    transition-duration: 0.3s;
+    margin-left: 5px;
+    margin-top: 1vh;
+  }
+  
+  #btnAdd:hover {
+    background-color: var(--hover);
+  }
+  
+  /* Contenedor de tareas */
+  #div_list {
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Lista de tareas */
+  #ul_list {
+    width: 95%;
+    max-width: 600px;
+    min-height: 400px;
+    padding: 10px;
+    border: 1px solid var(--bordes);
+    border-radius: 5px;
+    background-color: white;
+    overflow-y: auto;
+  }
+  
+  /* Tareas */
+  li {
+    font-weight: bold;
+    color: var(--texto);
+    margin-bottom: 10px;
+  }
+  
+  /* Tarea completada */
+  .completed {
+    text-decoration: line-through;
+    color: var(--tareas_completadas);
+  }
+  
+  /* 🖥️ Tablet */
+@media screen and (min-width: 768px) {
+    header {
+      font-size: 4vw;
+    }
+  
+    #add_task {
+      width: 300px;
+    }
+  
+    #btnAdd {
+      width: 80px;
+    }
+  
+    #ul_list {
+      height: 400px;
+      max-width: 90%;
+    }
+  }
+  
+  /* 💻 Escritorio */
+  @media screen and (min-width: 1024px) {
+    header {
+      font-size: 3vw;
+    }
+  
+    #ul_list {
+      width: 1000px;
+      height: 600px;
+    }
+  }
+  
