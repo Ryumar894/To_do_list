@@ -8,7 +8,7 @@ Este proyecto es una lista de tareas desarrollada con **HTML**, **CSS** y **Java
 
 - **Agregar tareas** mediante botón o tecla Enter.
 - **Validación** para evitar tareas vacías o con solo espacios.
-- ☑**Marcar tareas como completadas** mediante checkbox.
+- **Marcar tareas como completadas** mediante checkbox.
 - **Persistencia automática** en `localStorage`, incluso al recargar.
-- 🗑**Eliminar tareas** con un botón en forma de papelera.
+- **Eliminar tareas** con un botón en forma de papelera.
 - **Animación de eliminación** para una mejor experiencia visual.
